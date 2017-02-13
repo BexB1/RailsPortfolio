@@ -1,4 +1,12 @@
 <h1>Homepage</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
+<h1>Skills</h1>
+<%= @skills.each do |skill| %>
+
+  <h2><%= skill.title %> : <%= skill.percent_utilized %></h2>
+
+<% end %>
+
+<h1>Blogs</h1>
 <%= @posts.inspect %>
